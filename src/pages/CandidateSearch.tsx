@@ -91,13 +91,13 @@ const CandidateSearch = () => {
               onClick={handleSaveCandidate}
               className="button button-save"
             >
-              <span className="icon-plus">+</span> Save
+              <span className="icon-plus">+</span>
             </button>
             <button
               onClick={handleSkipCandidate}
               className="button button-skip"
             >
-              <span className="icon-minus">-</span> Skip
+              <span className="icon-minus">-</span>
             </button>
           </div>
         </div>
