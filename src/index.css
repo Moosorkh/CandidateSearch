@@ -94,24 +94,55 @@ tbody tr:nth-child(odd) {
   background-color: #333333;
 }
 
+/* Navbar container */
 .nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   padding: 1em 2em;
+  background-color: #1a1a1a;
+  /* Dark background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+  position: sticky;
+  /* Keep navbar at the top */
+  top: 0;
+  z-index: 1000;
+  /* Ensure navbar is above other elements */
 }
 
 .nav-item {
-  padding: 0 0.5rem;
+  display: inline-block;
+  padding: 0 1rem;
+  /* Increased padding for spacing */
   list-style: none;
+  /* Add space between the items */
+  position: relative;
+
 }
 
 .nav-link {
   color: #fff;
+  font-size: 1em;
+  font-weight: 500;
   text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #646cff;
+  /* Light blue background on hover */
+  color: #ffffff;
+  /* White text on hover */
 }
 
 .active {
   font-weight: 700;
+  color: #535bf2;
+  border-bottom: 2px solid #535bf2;
+  /* Underline to indicate active link */
 }
 
 .table {
