@@ -64,7 +64,8 @@ const CandidateSearch = () => {
   };
 
   return (
-    <div className="candidate-container">
+    <div>
+      <h1>Potential Candidates</h1>
       {candidate ? (
         <div className="candidate-card">
           <img
